@@ -37,27 +37,28 @@ namespace CybersecurityChatbotGUI
         private void LoadRandomTips()
         {
             _randomTips = new Dictionary<string, List<string>>()
+    {
+        {
+            "phishing", new List<string>
             {
-                {
-                    "phishing", new List<string>
-                    {
-                        "Check the sender's email address carefully – scammers use fake addresses.",
-                        "Hover over links to see the real URL before clicking.",
-                        "Never download attachments from emails you weren't expecting.",
-                        "Look for spelling and grammar mistakes – they're common in phishing emails.",
-                        "If an email asks for personal info, contact the company directly using a known phone number."
-                    }
-                },
-                {
-                    "password", new List<string>
-                    {
-                        "Use a password manager like Bitwarden or LastPass.",
-                        "Avoid using personal info like your name or birthdate.",
-                        "Change your passwords every 3-6 months.",
-                        "Never share your password with anyone."
-                    }
-                }
-            };
+                "Check the sender's email address carefully – scammers use fake addresses.",
+                "Hover over links to see the real URL before clicking.",
+                "Never download attachments from emails you weren't expecting.",
+                "Look for spelling and grammar mistakes – they're common in phishing emails.",
+                "If an email asks for personal info, contact the company directly using a known phone number.",
+                "Enable spam filters and report suspicious emails to your IT department or email provider."
+            }
+        },   // <-- THIS COMMA IS REQUIRED
+        {
+            "password", new List<string>
+            {
+                "Use a password manager like Bitwarden or LastPass.",
+                "Avoid using personal info like your name or birthdate.",
+                "Change your passwords every 3-6 months.",
+                "Never share your password with anyone."
+            }
+        }
+    };
         }
 
         public string GetResponse(string userInput)
