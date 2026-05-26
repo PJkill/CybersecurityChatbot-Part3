@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Author: Phumudzo Masibigiri | ST10475290 | Part 2
+// Part 2 – Cybersecurity Awareness Bot
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Media;
