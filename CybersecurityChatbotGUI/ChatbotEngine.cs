@@ -24,7 +24,7 @@ namespace CybersecurityChatbotGUI
             _responses = new Dictionary<string, string>()
             {
                 { "password", "Use a strong password with at least 12 characters, mix of letters, numbers, and symbols. Never reuse passwords!" },
-                { "scam", "Scammers often create a sense of urgency. Always verify the sender before sharing personal information." },
+                { "scam", "Scammers often create a sense of urgency. Always verify the sender. Never share personal info over email. Legit companies won't ask for passwords or credit cards by email." },
                 { "privacy", "Review your privacy settings on social media. Limit what you share publicly." },
                 { "phishing", "" },  // handled by random tips
                 { "virus", "Keep your antivirus software updated and avoid downloading files from unknown sources." },
