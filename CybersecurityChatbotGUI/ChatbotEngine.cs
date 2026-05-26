@@ -13,7 +13,7 @@ namespace CybersecurityChatbotGUI
         private string _userName = "";
         private string _favoriteTopic = "";
 
-        public ChatbotEngine()
+        public ChatbotEngine()  // Make sure constructor is public, not private
         {
             LoadResponses();
             LoadRandomTips();
@@ -30,7 +30,6 @@ namespace CybersecurityChatbotGUI
                 { "virus", "Keep your antivirus software updated and avoid downloading files from unknown sources." },
                 { "2fa", "Two-factor authentication adds an extra layer of security. Enable it whenever possible." },
                 { "hacked", "If you think you've been hacked: change passwords immediately, run antivirus, and contact your bank." },
-                // NEW: help command
                 { "help", "You can ask about: passwords, phishing, scams, privacy, virus, 2fa, hacked. Also tell me your name or what you're interested in." }
             };
         }
@@ -106,7 +105,6 @@ namespace CybersecurityChatbotGUI
                 if (input.Contains(kvp.Key))
                 {
                     _lastTopic = kvp.Key;
-                    // For help keyword, just return the response directly
                     if (kvp.Key == "help")
                         return sentimentPrefix + kvp.Value;
 
