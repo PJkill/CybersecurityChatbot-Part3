@@ -169,3 +169,4 @@ namespace CybersecurityChatbotGUI
         }
     }
 }
+// End of ChatbotEngine class – Part 2 complete
