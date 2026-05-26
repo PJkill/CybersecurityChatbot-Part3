@@ -1,5 +1,6 @@
-﻿// Author: Phumudzo Masibigiri | ST10475290 | Part 2
-// Part 2 – Cybersecurity Awareness Bot
+﻿// GUI for Cybersecurity Chatbot - Part 2
+// Author: Phumudzo Masibigiri | ST10475290 | Part 2
+
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,7 +20,7 @@ namespace CybersecurityChatbotGUI
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            // Display ASCII art (ensure your XAML has a TextBlock named AsciiArtBlock)
+            // Display ASCII art
             AsciiArtBlock.Text = GetAsciiArt();
 
             _chatbot = new ChatbotEngine();
@@ -79,7 +80,6 @@ namespace CybersecurityChatbotGUI
         {
             string timestamp = DateTime.Now.ToString("HH:mm");
             ConversationList.Items.Add($"[{timestamp}] {senderName}: {message}");
-            // Scroll to bottom (compatible with C# 7.3)
             if (ConversationList.Items.Count > 0)
                 ConversationList.ScrollIntoView(ConversationList.Items[ConversationList.Items.Count - 1]);
         }
