@@ -24,7 +24,8 @@ namespace CybersecurityChatbotGUI
         {
             _responses = new Dictionary<string, string>()
             {
-                { "password", "Use a strong password with at least 12 characters, mix of letters, numbers, and symbols. Never reuse passwords!" },
+                // IMPROVED PASSWORD RESPONSE FOR COMMIT 5
+                { "password", "Use a strong password with at least 12 characters, mix of letters, numbers, and symbols. Never reuse passwords! Use a mix of characters for better security." },
                 { "scam", "Scammers often create a sense of urgency. Always verify the sender. Never share personal info over email." },
                 { "privacy", "Review your privacy settings on social media. Limit what you share publicly." },
                 { "phishing", "" },
@@ -171,3 +172,4 @@ namespace CybersecurityChatbotGUI
         }
     }
 }
+// End of ChatbotEngine – POE complete
