@@ -1,4 +1,5 @@
-﻿using System;
+﻿// MainWindow – WPF GUI with Chat, Tasks, Quiz, and Activity Log tabs
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Media;
