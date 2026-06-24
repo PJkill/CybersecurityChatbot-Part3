@@ -296,3 +296,4 @@ namespace CybersecurityChatbotGUI
         }
     }
 }
+// End of MainWindow – POE complete
