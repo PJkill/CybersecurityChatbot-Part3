@@ -1,4 +1,5 @@
-﻿using System;
+﻿// QuizManager.cs – Manages cybersecurity quiz with 15 questions
+using System;
 using System.Collections.Generic;
 
 namespace CybersecurityChatbotGUI
