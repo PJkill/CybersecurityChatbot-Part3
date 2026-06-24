@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿// TaskManager.cs – Handles all database operations for tasks
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 
