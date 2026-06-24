@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// ActivityLogger.cs – Tracks all user and bot actions with timestamps
 namespace CybersecurityChatbotGUI
 {
     public class ActivityLogger
